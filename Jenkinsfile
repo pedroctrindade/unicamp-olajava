@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     docker.image("olaunicamp:latest").inside {
-                        sh 'java OlaUnicamp'
+                        sh 'java /app/OlaUnicamp'
                     }
                 }
             }
